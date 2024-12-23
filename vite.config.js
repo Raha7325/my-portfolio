@@ -4,7 +4,7 @@ import path from "path"
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/my-portfolio",
+  // base: "/my-portfolio", 
   resolve: {
     alias: {
       // eslint-disable-next-line no-undef
