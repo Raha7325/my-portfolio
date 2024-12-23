@@ -9,6 +9,7 @@ import Cv from "./pages/Cv"
 function App() {
   const location = useLocation()
   const backgroundStyle = location.pathname == "/my-portfolio" ? "bg-[url('./assets/images/background-homePage.jpeg')]" : "bg-pink-100"
+  console.log('back', location)
   return (
     <div className={`${backgroundStyle} background flex flex-col min-h-screen overflow-y-scroll`}>
       <Header />
