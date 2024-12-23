@@ -14,3 +14,11 @@
     left: 0;
     z-index: -1; 
 }
+.linear-color-title {
+    background-image: linear-gradient(to right, #000000 0%, #dc77ad 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+  

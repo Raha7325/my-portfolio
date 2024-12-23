@@ -10,14 +10,16 @@ function App() {
   const location = useLocation()
   const backgroundStyle = location.pathname == "/" ? "bg-[url('./assets/images/background-homePage.jpeg')]" : "bg-pink-100"
   return (
-    <div className={`${backgroundStyle} background`}>
+    <div className={`${backgroundStyle} background flex flex-col min-h-screen overflow-y-scroll`}>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/cv" element={<Cv />} />
-      </Routes>
+      <main className='flex-grow container mx-auto'>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/cv" element={<Cv />} />
+        </Routes>
+      </main>
       <Footer />
     </div>
   )
