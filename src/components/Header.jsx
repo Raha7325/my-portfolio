@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
     return (
         <nav className="py-3 container mx-auto flex justify-between">
-            <NavLink to="/my-portfolio">
+            <NavLink to="/my-portfolio/">
                 <img src={Logo} className="rounded-full object-cover h-[70px]" alt="Faezeh(raha) kashir" width={70} height={70} />
             </NavLink>
             <div className="flex items-center">
